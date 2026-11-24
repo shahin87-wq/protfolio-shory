@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>শাহীন অর্গানিক – খাঁটি দেশি পণ্য</title>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@600;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<style>
+:root{color-scheme:light;--d:#5a3418;--m:#a8672b;--l:#f6ead9;--a:#c9822f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:'Hind Siliguri',system-ui,sans-serif;background:var(--l);color:#2b2118;transition:background .4s}
+.sf{font-family:'Noto Serif Bengali','Hind Siliguri',serif}
+.bd{background:var(--d);color:#fff}.ac{background:var(--a);color:#fff}
+.tx-d{color:var(--d)}.tx-a{color:var(--m)}
+.card{background:#fff;border-radius:18px;border:1px solid color-mix(in srgb,var(--d) 14%,transparent)}
+.chip{white-space:nowrap;border-radius:999px;padding:6px 14px;font-weight:600;border:1.5px solid var(--d);color:var(--d);background:transparent}
+.chip.on{background:var(--d);color:#fff}
+.orb{width:min(78vw,340px);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;font-size:clamp(110px,30vw,190px);background:radial-gradient(circle at 35% 30%,color-mix(in srgb,var(--a) 55%,#fff),var(--m) 70%);box-shadow:0 30px 60px -20px var(--d)}
+.sm-orb{position:absolute;font-size:46px;opacity:.9}
+details>summary{cursor:pointer;list-style:none;font-weight:600}
+details>summary::-webkit-details-marker{display:none}
+details[open]>summary{color:var(--m)}
+.btn{display:inline-block;background:var(--a);color:#fff;font-weight:700;border-radius:14px;padding:14px 26px;text-align:center}
+.btn:focus-visible,.chip:focus-visible,summary:focus-visible{outline:3px solid var(--d);outline-offset:2px}
+.pk.sel{outline:3px solid var(--a)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="sticky top-0 z-20 bd" style="padding-top:env(safe-area-inset-top,0px)">
+  <div class="max-w-5xl mx-auto px-4 py-2 flex items-center gap-3">
+    <div class="sf font-extrabold text-lg shrink-0">🌿 শাহীন অর্গানিক</div>
+    <nav id="chips" class="flex gap-2 overflow-x-auto" style="scrollbar-width:none" aria-label="পণ্য"></nav>
+  </div>
+</header>
+<main id="app"></main>
+<footer class="bd text-center text-sm py-8 px-4">
+  <div class="sf font-extrabold text-lg">শাহীন অর্গানিক</div>
+  <p class="opacity-80 mt-1">সরাসরি উৎস থেকে খাঁটি দেশি পণ্য, আপনার দোরগোড়ায়</p>
+  <p class="opacity-60 mt-3">© ২০২৬ শাহীন অর্গানিক</p>
+</footer>
+<script>
+var WA="8801XXXXXXXXX"; /* আপনার হোয়াটসঅ্যাপ নম্বর এখানে বসান */
+var P=[
+{id:"gur",n:"খেজুরের গুড়",e:"🍯",d:"#5a3418",m:"#9a5a24",l:"#f4e6d3",a:"#b5671f",
+ h:"শীতের সকালের আসল খেজুর গুড়",s:"গাছি থেকে সরাসরি আনা রস, কাঠের চুলায় জ্বাল দেওয়া। কোনো চিনি নেই, কোনো রং নেই।",
+ o:"যশোর ও কুষ্টিয়ার খেজুর বাগানের গাছিদের কাছ থেকে নভেম্বর–ফেব্রুয়ারিতে সংগ্রহ করা রস।",
+ pr:["ভোরে গাছ থেকে তাজা রস নামানো","মাটির হাঁড়িতে ছেঁকে নেওয়া","কাঠের চুলায় ধীরে জ্বাল দিয়ে ঘন করা"],
+ g:["ভাঙলে ভেতরে দানাদার ও নরম, কাচের মতো শক্ত নয়","আগুনে গরম করলে পোড়া চিনির গন্ধ নয়, রসের ঘ্রাণ","পানিতে গুললে তলায় সাদা চিনির কণা জমে না","রং হালকা সোনালী-বাদামি, গাঢ় কালো নয়"],
+ b:["চিনির চেয়ে স্বাভাবিক আয়রন ও খনিজ","শীতে শরীর গরম রাখে","ঐতিহ্যবাহী পিঠা-পায়েসের আসল স্বাদ","রিফাইন্ড চিনির ভালো বিকল্প"],
+ y:["যারা পিঠা-পায়েস বা চায়ে চিনির বদলে গুড় চান","পরিবারে খাঁটি দেশি খাবার চান যারা"],
+ no:["যাদের ডায়াবেটিস আছে, ডাক্তারের পরামর্শ নিন","যারা চিনির মতো সাদা ও এক রকম দানা চান"],
+ df:[["চিনি ও রং মেশানো","শুধু খেজুরের রস"],["অতিরিক্ত শক্ত, কাচের মতো","নরম ও দানাদার"],["বছরজুড়ে একই রকম","শুধু শীত মৌসুমের"],["উৎস অজানা","গাছির নাম জানা"]],
+ pk:[["৫০০ গ্রাম",320,380],["১ কেজি",620,740],["৫ কেজি",2950,3500]],
+ rv:[["রহিমা বেগম","ঢাকা","ছোটবেলার গুড়ের স্বাদ ফিরে পেলাম। পায়েসে দারুণ হয়েছে।"],["তানভীর হোসেন","চট্টগ্রাম","প্যাকেজিং ভালো ছিল, দ্বিতীয়বার অর্ডার করলাম।"]],
+ f:[["কতদিন ভালো থাকে?","শুকনো, বায়ুরোধী পাত্রে ঠান্ডা জায়গায় ৬ মাস পর্যন্ত।"],["কীভাবে রাখব?","ঢাকনা শক্ত করে লাগিয়ে রাখুন, ভেজা চামচ ব্যবহার করবেন না।"],["সারা বছর পাওয়া যায়?","শীত মৌসুমে তৈরি গুড় আমরা সংরক্ষণ করে সারা বছর দিই।"]]},
+{id:"tel",n:"সরিষার তেল",e:"🌻",d:"#4b4a10",m:"#8c8a1c",l:"#f7f1c9",a:"#c99a0a",
+ h:"কাঠের ঘানিতে ভাঙা খাঁটি সরিষার তেল",s:"ঝাঁঝালো ঘ্রাণ, গাঢ় সোনালী রং। অন্য কোনো তেল মেশানো নেই।",
+ o:"মানিকগঞ্জ ও ফরিদপুরের সরিষা ক্ষেত থেকে সংগ্রহ করা দেশি সরিষা।",
+ pr:["সরিষা বেছে রোদে শুকানো","কাঠের ঘানিতে ধীরগতিতে পেষা","ছেঁকে কাচের বোতলে ভরা"],
+ g:["নাকে ঝাঁঝ লাগে, ঘ্রাণ তীব্র","ফ্রিজে রাখলে জমাট বাঁধে না, অল্প ঘোলা হয়","রং গাঢ় সোনালী, অতিরিক্ত পরিষ্কার নয়","রান্নায় আলাদা স্বাদ ও ঝাঁঝ"],
+ b:["ভর্তা ও মাছ রান্নায় অতুলনীয় স্বাদ","মালিশের জন্য ঐতিহ্যবাহী","প্রক্রিয়াজাত নয়, কেমিক্যাল ছাড়া","বাঁধা দামে সরাসরি উৎস থেকে"],
+ y:["যারা ভর্তা, আচার ও মাছ রান্নায় আসল ঝাঁঝ চান","কাঠের ঘানির তেল পছন্দ করেন"],
+ no:["যারা হালকা ও গন্ধহীন তেল পছন্দ করেন","যাদের সরিষায় অ্যালার্জি আছে"],
+ df:[["পাম বা সয়াবিন মেশানো","১০০% সরিষা"],["রং ও এসেন্স যোগ করা","প্রাকৃতিক ঘ্রাণ"],["মেশিনে গরম করে পেষা","ঠান্ডা কাঠের ঘানি"],["ব্যাচ নম্বর নেই","প্রতিটি বোতলে ব্যাচ তারিখ"]],
+ pk:[["১ লিটার",420,480],["২ লিটার",820,950],["৫ লিটার",2000,2350]],
+ rv:[["সালমা আক্তার","সিলেট","ভর্তায় আসল ঝাঁঝ। বাজারের তেলে এটা পাই না।"],["মাহমুদ","রাজশাহী","দ্রুত ডেলিভারি, বোতল ভালোভাবে প্যাক করা ছিল।"]],
+ f:[["তেল কি ঘোলা হবে?","হ্যাঁ, শীতে বা ঠান্ডায় সামান্য ঘোলা হতে পারে, এটা স্বাভাবিক।"],["মালিশে ব্যবহার করা যায়?","যায়, তবে প্রথমে অল্প জায়গায় পরীক্ষা করে নিন।"],["কতদিন চলে?","ছায়াযুক্ত জায়গায় ৮–১০ মাস।"]]},
+{id:"kal",n:"কালোজিরা",e:"🫘",d:"#1d2a2a",m:"#3d5a57",l:"#e4ece9",a:"#2f6f68",
+ h:"কালোজিরা: দেশি, বাছাই করা, সতেজ",s:"ধুলা, পাথর ও ভেজালমুক্ত। রান্না, ভর্তা ও ঘরোয়া ব্যবহারে।",
+ o:"নোয়াখালী ও পাবনার কৃষকদের কাছ থেকে নতুন ফলনের কালোজিরা।",
+ pr:["ফসল তুলে রোদে শুকানো","হাতে ঝাড়া ও বাছাই","বায়ুরোধী প্যাকেটে ভরা"],
+ g:["দানা গাঢ় কালো ও ম্যাট, চকচকে নয়","হাতে ঘষলে কালো রং লাগে না","ঘ্রাণ তীব্র ও ঝাঁঝালো","পানিতে ফেললে অল্প সময়ে ভেসে ওঠে না"],
+ b:["রান্নায় বিশেষ ঘ্রাণ ও স্বাদ","মধুর সঙ্গে ঘরোয়া ব্যবহারে জনপ্রিয়","আচার ও পরোটায় চমৎকার","পুরো দানা, গুঁড়া নয়, তাই সতেজ"],
+ y:["যারা রান্নায় আসল ঘ্রাণ চান","ঘরোয়া স্বাস্থ্যসচেতন পরিবার"],
+ no:["গর্ভবতী নারী ও চিকিৎসাধীনরা ডাক্তারের পরামর্শ নিন","যারা তীব্র ঘ্রাণ অপছন্দ করেন"],
+ df:[["পুরনো, ধুলা মেশানো","নতুন ফলন, বাছাই করা"],["রং করা বা চকচকে","প্রাকৃতিক ম্যাট কালো"],["ভাঙা ও গুঁড়া বেশি","পুরো দানা"],["ওজনে কম","নির্ধারিত ওজন নিশ্চিত"]],
+ pk:[["২৫০ গ্রাম",260,300],["৫০০ গ্রাম",480,560],["১ কেজি",900,1050]],
+ rv:[["নাজমা খাতুন","খুলনা","দানা পরিষ্কার, ঘ্রাণ দারুণ।"],["ইমরান","বরিশাল","বাজারের চেয়ে অনেক ভালো মান।"]],
+ f:[["গুঁড়া পাওয়া যায়?","এখন শুধু পুরো দানা। গুঁড়ার জন্য মেসেজ করুন।"],["কীভাবে সংরক্ষণ করব?","শুকনো কাচের বয়ামে ঢাকনা এঁটে রাখুন।"],["কতদিন ভালো থাকে?","৮–১২ মাস।"]]},
+{id:"modhu",n:"সরিষা ফুলের মধু",e:"🐝",d:"#6b4b00",m:"#c99a00",l:"#fff3b8",a:"#e0a800",
+ h:"সরিষা ক্ষেতের মৌমাছির সোনালী মধু",s:"মৌচাক থেকে সরাসরি, কোনো চিনির সিরাপ নেই। শীতের সরিষা ফুলের আসল স্বাদ।",
+ o:"ডিসেম্বর–জানুয়ারিতে ফুলে ভরা সরিষা ক্ষেতে রাখা মৌবাক্সের মধু।",
+ pr:["মৌবাক্স সরিষা ক্ষেতের পাশে বসানো","ফ্রেম থেকে মধু নিংড়ানো","ছেঁকে কাচের বোতলে ভরা"],
+ g:["ঠান্ডায় সামান্য জমে যায়, এটা স্বাভাবিক","আঙুলে নিয়ে গড়ালে সুতার মতো লম্বা টান","পানিতে ফেললে তলায় ঘন হয়ে বসে","ঘ্রাণ হালকা ফুলের মতো, কৃত্রিম নয়"],
+ b:["চা, দুধ ও রুটিতে প্রাকৃতিক মিষ্টি","গলা আরামে ঘরোয়া ব্যবহার","চিনির বদলে স্বাভাবিক বিকল্প","সোনালী রং ও মৃদু স্বাদ"],
+ y:["যারা চিনির বদলে প্রাকৃতিক মিষ্টি চান","শিশু ও বড়দের নাস্তায় ব্যবহার করতে চান"],
+ no:["১ বছরের কম বয়সী শিশুকে মধু দেবেন না","ডায়াবেটিস থাকলে ডাক্তারের পরামর্শ নিন"],
+ df:[["চিনির সিরাপ মেশানো","১০০% মৌচাকের মধু"],["কখনো জমে না","ঠান্ডায় জমে যায়"],["অতিরিক্ত পাতলা","স্বাভাবিক ঘনত্ব"],["উৎস নেই","মৌচাষির নাম ও এলাকা"]],
+ pk:[["২৫০ গ্রাম",280,330],["৫০০ গ্রাম",540,640],["১ কেজি",1050,1250]],
+ rv:[["শিরিন সুলতানা","ঢাকা","মধুর স্বাদ হালকা ও মিষ্টি। বাচ্চারা পছন্দ করেছে।"],["জামাল","গাজীপুর","জমে যাওয়াতেই বুঝলাম খাঁটি।"]],
+ f:[["মধু জমে গেলে কী করব?","বোতল কুসুম গরম পানিতে কিছুক্ষণ রাখুন, গলে যাবে।"],["কতদিন ভালো থাকে?","ঠিকমতো রাখলে ১–২ বছর।"],["শিশুকে দেওয়া যাবে?","১ বছরের নিচে দেবেন না।"]]}
+];
+var cur=0,sel=1;
+var bn=function(x){return String(x).replace(/\d/g,function(d){return "০১২৩৪৫৬৭৮৯"[d]})};
+var money=function(x){return "৳"+bn(x.toLocaleString("en-US"))};
+function list(a,ic){return a.map(function(t){return '<li class="flex gap-2"><span>'+ic+'</span><span>'+t+'</span></li>'}).join("")}
+function sec(t,b,cls){return '<section class="'+(cls||"")+' px-4 py-10"><div class="max-w-5xl mx-auto"><h2 class="sf font-extrabold text-2xl sm:text-3xl tx-d mb-6">'+t+'</h2>'+b+'</div></section>'}
+function render(){
+ var p=P[cur],r=document.documentElement.style;
+ r.setProperty("--d",p.d);r.setProperty("--m",p.m);r.setProperty("--l",p.l);r.setProperty("--a",p.a);
+ document.title=p.n+" – শাহীন অর্গানিক";
+ document.getElementById("chips").innerHTML=P.map(function(q,i){return '<button class="chip'+(i==cur?' on':'')+'" onclick="go('+i+')">'+q.e+' '+q.n+'</button>'}).join("");
+ var pk=p.pk[sel],h='';
+ h+='<section class="px-4 pt-8 pb-12"><div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">'+
+ '<div class="order-2 md:order-1"><p class="font-semibold tx-a">'+p.n+' · সরাসরি উৎস থেকে</p>'+
+ '<h1 class="sf font-extrabold tx-d text-3xl sm:text-5xl leading-tight mt-2">'+p.h+'</h1>'+
+ '<p class="mt-4 text-lg max-w-md">'+p.s+'</p>'+
+ '<div class="mt-6 flex flex-wrap gap-3 items-center"><a href="#order" class="btn">অর্ডার করুন</a><a href="#genuine" class="chip">খাঁটি চিনবেন যেভাবে</a></div>'+
+ '<p class="mt-4 text-sm opacity-80">ক্যাশ অন ডেলিভারি · সারা বাংলাদেশে ডেলিভারি</p></div>'+
+ '<div class="order-1 md:order-2 flex justify-center relative"><div class="orb" role="img" aria-label="'+p.n+'">'+p.e+'</div><span class="sm-orb" style="top:4%;left:6%">🌿</span><span class="sm-orb" style="bottom:6%;right:4%">🌾</span></div></div></section>';
+ h+=sec("কোথা থেকে আসে, কীভাবে তৈরি",'<p class="max-w-2xl mb-5">'+p.o+'</p><div class="grid sm:grid-cols-3 gap-4">'+p.pr.map(function(t,i){return '<div class="card p-5"><div class="sf font-extrabold text-2xl tx-a">ধাপ '+bn(i+1)+'</div><p class="mt-1">'+t+'</p></div>'}).join("")+'</div>');
+ h+=sec("খাঁটি চেনার উপায়",'<ul class="card p-5 grid sm:grid-cols-2 gap-3">'+list(p.g,"✅")+'</ul>','" id="genuine');
+ h+=sec("কেন আপনার প্রয়োজন",'<ul class="grid sm:grid-cols-2 gap-3">'+p.b.map(function(t){return '<li class="card p-4 font-medium">'+t+'</li>'}).join("")+'</ul>');
+ h+=sec("কারা কিনবেন, কারা কিনবেন না",'<div class="grid sm:grid-cols-2 gap-4"><div class="card p-5"><h3 class="font-bold mb-2 tx-d">কিনতে পারেন</h3><ul class="space-y-2">'+list(p.y,"👍")+'</ul></div><div class="card p-5"><h3 class="font-bold mb-2 tx-d">সতর্কতা</h3><ul class="space-y-2">'+list(p.no,"⚠️")+'</ul></div></div>');
+ h+=sec("বাজারের ভেজাল বনাম আমাদের "+p.n,'<div class="card overflow-hidden"><div class="row bd font-bold text-center"><div class="p-3" style="background:#8a2f2f">বাজারে ভেজাল</div><div class="p-3">শাহীন অর্গানিক</div></div>'+p.df.map(function(x){return '<div class="row" style="background:color-mix(in srgb,var(--d) 12%,transparent)"><div class="bg-white p-3">❌ '+x[0]+'</div><div class="bg-white p-3">✅ '+x[1]+'</div></div>'}).join("")+'</div>');
+ h+=sec("কোয়ালিটি নিশ্চয়তা",'<div class="bd rounded-2xl p-6 grid sm:grid-cols-3 gap-4 text-center"><div><div class="text-3xl">🔍</div><b>ভেজাল প্রমাণিত হলে</b><p class="opacity-90 text-sm">পুরো টাকা ফেরত</p></div><div><div class="text-3xl">📦</div><b>নিরাপদ প্যাকেজিং</b><p class="opacity-90 text-sm">ভাঙা বা লিক হলে বদলে দেব</p></div><div><div class="text-3xl">🤝</div><b>আগে দেখে, পরে টাকা</b><p class="opacity-90 text-sm">ক্যাশ অন ডেলিভারি</p></div></div>');
+ h+=sec("প্যাকেজ ও দাম",'<div class="grid sm:grid-cols-3 gap-4">'+p.pk.map(function(k,i){return '<button class="pk card p-5 text-left'+(i==sel?' sel':'')+'" onclick="pick('+i+')" aria-pressed="'+(i==sel)+'"><div class="font-bold text-lg">'+k[0]+'</div><div class="sf font-extrabold text-2xl tx-a">'+money(k[1])+'</div><div class="text-sm opacity-70 line-through">'+money(k[2])+'</div><div class="mt-1 text-sm font-semibold" style="color:#1b7a3a">সাশ্রয় '+money(k[2]-k[1])+'</div></button>'}).join("")+'</div>'+
+ '<p class="mt-4 card p-4"><b>অফার:</b> ২টি প্যাকেজ একসাথে নিলে ডেলিভারি চার্জ ফ্রি। ঢাকায় ১–২ দিন, ঢাকার বাইরে ২–৪ দিনে পৌঁছে যাবে।</p>');
+ h+=sec("গ্রাহকরা যা বলছেন",'<div class="grid sm:grid-cols-2 gap-4">'+p.rv.map(function(v){return '<figure class="card p-5"><div>⭐⭐⭐⭐⭐</div><blockquote class="mt-2">'+v[2]+'</blockquote><figcaption class="mt-3 font-semibold tx-d">'+v[0]+', <span class="opacity-70 font-normal">'+v[1]+'</span></figcaption></figure>'}).join("")+'</div><p class="text-xs opacity-60 mt-2">নমুনা রিভিউ, আসল গ্রাহকদের মতামত দিয়ে বদলে নিন।</p>');
+ h+=sec("সাধারণ প্রশ্ন",'<div class="space-y-3">'+p.f.map(function(q){return '<details class="card p-4"><summary>'+q[0]+'</summary><p class="mt-2">'+q[1]+'</p></details>'}).join("")+'</div>');
+ h+='<section id="order" class="px-4 py-12"><div class="max-w-xl mx-auto bd rounded-3xl p-6 text-center"><h2 class="sf font-extrabold text-2xl">আজই '+p.n+' অর্ডার করুন</h2><p class="mt-2 opacity-90">নির্বাচিত: <b>'+pk[0]+' · '+money(pk[1])+'</b></p><a id="ob" class="btn mt-5 w-full" target="_blank" rel="noopener" href="'+wa(p,pk)+'">অর্ডার করুন</a><p class="text-xs opacity-70 mt-3">হোয়াটসঅ্যাপে নাম, ঠিকানা ও ফোন নম্বর পাঠান। ক্যাশ অন ডেলিভারি।</p></div></section>';
+ h+=sec("আমাদের অন্য পণ্য",'<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">'+P.map(function(q,i){return i==cur?'':'<button class="card p-4 text-center" onclick="go('+i+')"><div class="text-5xl">'+q.e+'</div><div class="font-bold mt-1" style="color:'+q.d+'">'+q.n+'</div></button>'}).join("")+'</div>');
+ document.getElementById("app").innerHTML=h;
+}
+function wa(p,k){return "https://wa.me/"+WA+"?text="+encodeURIComponent("আসসালামু আলাইকুম, আমি "+p.n+" ("+k[0]+") অর্ডার করতে চাই।")}
+function go(i){cur=i;sel=1;render();window.scrollTo({top:0})}
+function pick(i){sel=i;var y=window.scrollY;render();window.scrollTo(0,y)}
+render();
+</script>
+</body>
+</html>
